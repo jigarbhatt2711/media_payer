@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  purchase_option: one
+  purchasable: one
+  purchasable_type: Purchasable
+
+two:
+  user: two
+  purchase_option: two
+  purchasable: two
+  purchasable_type: Purchasable

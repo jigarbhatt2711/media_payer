@@ -65,3 +65,25 @@ Episode.create ([
     plot: "desc of plot abc Episode"
   }
 ])
+
+User.create ([
+  {
+    email: "abc@gmail.com"
+  },
+  {
+    email: "def@gmail.com"
+  }
+])
+
+PurchaseOption.create ([
+  {
+    price: 2.99,
+    video_quality: "HD"
+  },
+  {
+    price: 2.99,
+    video_quality: "SD"
+  }
+])
+
+Purchase.create(purchasable: Movie.first, purchase_option_id: PurchaseOption.first.id, user_id: User.first.id)

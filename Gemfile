@@ -26,8 +26,13 @@ gem 'bootsnap', '>= 1.4.2', require: false
 # gem 'rack-cors'
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # pretty print Ruby objects to visualize their structure. 
+  gem 'awesome_print', '~> 1.8', require:"ap"
+  # Combine 'pry' with 'byebug'. Adds 'step', 'next', 'finish', 'continue' and 'break' commands to control execution.
+  gem 'pry-byebug', '~> 3.4'
+  # Provides a better error page for Rails and other Rack apps. 
+  gem 'better_errors', '~> 2.5', '>= 2.5.1'
+  gem 'binding_of_caller', '~> 0.8.0'
 end
 
 group :development do
